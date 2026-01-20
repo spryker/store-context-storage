@@ -5,12 +5,13 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerTest\Client\StoreContextStorage;
+namespace SprykerTest\Client\StoreContextStorage\Client;
 
 use Codeception\Test\Unit;
 use Generated\Shared\Transfer\StoreApplicationContextCollectionTransfer;
 use Generated\Shared\Transfer\StoreApplicationContextTransfer;
 use Generated\Shared\Transfer\StoreStorageTransfer;
+use SprykerTest\Client\StoreContextStorage\StoreContextStorageClientTester;
 
 /**
  * Auto-generated group annotations
@@ -18,6 +19,7 @@ use Generated\Shared\Transfer\StoreStorageTransfer;
  * @group SprykerTest
  * @group Client
  * @group StoreContextStorage
+ * @group Client
  * @group StoreContextStorageClientTest
  * Add your own group annotations below this line
  */
