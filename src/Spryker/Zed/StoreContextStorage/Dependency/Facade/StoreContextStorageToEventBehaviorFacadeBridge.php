@@ -23,10 +23,10 @@ class StoreContextStorageToEventBehaviorFacadeBridge implements StoreContextStor
     }
 
     /**
-     * @param list<\Generated\Shared\Transfer\EventEntityTransfer> $eventTransfers
+     * @param array<\Generated\Shared\Transfer\EventEntityTransfer> $eventTransfers
      * @param string $foreignKeyColumnName
      *
-     * @return list<int>
+     * @return array<int>
      */
     public function getEventTransferForeignKeys(array $eventTransfers, string $foreignKeyColumnName): array
     {
