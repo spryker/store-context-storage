@@ -17,19 +17,11 @@ class StoreContextExpander implements StoreContextExpanderInterface
      */
     protected StoreContextStorageConfig $config;
 
-    /**
-     * @param \Spryker\Client\StoreContextStorage\StoreContextStorageConfig $config
-     */
     public function __construct(StoreContextStorageConfig $config)
     {
         $this->config = $config;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\StoreTransfer $storeTransfer
-     *
-     * @return \Generated\Shared\Transfer\StoreTransfer
-     */
     public function expandStore(StoreTransfer $storeTransfer): StoreTransfer
     {
         if ($storeTransfer->getApplicationContextCollection() === null) {

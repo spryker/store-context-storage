@@ -33,9 +33,6 @@ class StoreContextStorageBusinessTester extends Actor
 {
     use _generated\StoreContextStorageBusinessTesterActions;
 
-    /**
-     * @return \Spryker\Zed\StoreContextStorage\Business\StoreContextStorageFacadeInterface
-     */
     public function createStoreContextStorageFacade(): StoreContextStorageFacadeInterface
     {
         return new StoreContextStorageFacade();

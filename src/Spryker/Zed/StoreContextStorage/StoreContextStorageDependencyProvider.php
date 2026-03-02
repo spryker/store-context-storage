@@ -27,11 +27,6 @@ class StoreContextStorageDependencyProvider extends AbstractBundleDependencyProv
      */
     public const FACADE_STORE_STORAGE = 'FACADE_STORE_STORAGE';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideBusinessLayerDependencies(Container $container): Container
     {
         $container = parent::provideBusinessLayerDependencies($container);
@@ -42,11 +37,6 @@ class StoreContextStorageDependencyProvider extends AbstractBundleDependencyProv
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addEventBehaviorFacade(Container $container): Container
     {
         $container->set(static::FACADE_EVENT_BEHAVIOR, function (Container $container) {
@@ -58,11 +48,6 @@ class StoreContextStorageDependencyProvider extends AbstractBundleDependencyProv
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addStoreStorageFacade(Container $container): Container
     {
         $container->set(static::FACADE_STORE_STORAGE, function (Container $container) {

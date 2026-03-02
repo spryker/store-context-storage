@@ -67,9 +67,6 @@ class ContextStoreWritePublisherPluginTest extends Unit
         });
     }
 
-    /**
-     * @return void
-     */
     public function testContextStoreWritePublisherStoresData(): void
     {
         // Arrange

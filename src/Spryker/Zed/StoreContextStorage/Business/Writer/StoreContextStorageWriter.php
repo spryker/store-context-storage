@@ -29,10 +29,6 @@ class StoreContextStorageWriter implements StoreContextStorageWriterInterface
      */
     protected StoreContextStorageToStoreStorageFacadeInterface $storeStorageFacade;
 
-    /**
-     * @param \Spryker\Zed\StoreContextStorage\Dependency\Facade\StoreContextStorageToEventBehaviorFacadeInterface $eventBehaviorFacade
-     * @param \Spryker\Zed\StoreContextStorage\Dependency\Facade\StoreContextStorageToStoreStorageFacadeInterface $storeStorageFacade
-     */
     public function __construct(
         StoreContextStorageToEventBehaviorFacadeInterface $eventBehaviorFacade,
         StoreContextStorageToStoreStorageFacadeInterface $storeStorageFacade

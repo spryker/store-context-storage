@@ -40,9 +40,6 @@ class StoreContextStorageClientTest extends Unit
      */
     protected StoreContextStorageClientTester $tester;
 
-    /**
-     * @return void
-     */
     public function testExpandStoreWithTimezoneExpandsStoreTransferWithTimezone(): void
     {
         // Arrange

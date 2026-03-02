@@ -39,9 +39,6 @@ class StoreContextStorageFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testWriteStoreContextStorageCollectionByStoreEventsCallsStoreStorageFacadeMethod(): void
     {
         //Arrange

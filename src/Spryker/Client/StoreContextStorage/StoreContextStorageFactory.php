@@ -16,9 +16,6 @@ use Spryker\Client\StoreContextStorage\Expander\StoreContextExpanderInterface;
  */
 class StoreContextStorageFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Client\StoreContextStorage\Expander\StoreContextExpanderInterface
-     */
     public function createStoreContextExpander(): StoreContextExpanderInterface
     {
         return new StoreContextExpander(

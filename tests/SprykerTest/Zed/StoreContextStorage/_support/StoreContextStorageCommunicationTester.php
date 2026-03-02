@@ -28,19 +28,11 @@ class StoreContextStorageCommunicationTester extends Actor
 {
     use _generated\StoreContextStorageCommunicationTesterActions;
 
-    /**
-     * @param int $idStore
-     *
-     * @return \Orm\Zed\StoreStorage\Persistence\SpyStoreStorage|null
-     */
     public function findStoreStorageEntityByIdStore(int $idStore): ?SpyStoreStorage
     {
         return $this->createStoreStoragePropelQuery()->findOneByFkStore($idStore);
     }
 
-    /**
-     * @return \Orm\Zed\StoreStorage\Persistence\SpyStoreStorageQuery
-     */
     protected function createStoreStoragePropelQuery(): SpyStoreStorageQuery
     {
         return SpyStoreStorageQuery::create();
